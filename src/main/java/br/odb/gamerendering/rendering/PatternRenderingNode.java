@@ -23,8 +23,8 @@ public class PatternRenderingNode extends RenderingNode {
 		rc.saveClipRect();
 		rc.setClipRect(bounds);
 
-		for (int x = (int) bounds.x0; x <= bounds.x1; x += width) {
-			for (int y = (int) bounds.y0; y <= bounds.y1; y += height) {
+		for (int x = (int) bounds.p0.x; x <= bounds.p1.x; x += width) {
+			for (int y = (int) bounds.p0.y; y <= bounds.p1.y; y += height) {
 
 				dst.set(x, y, width, height);
 				repeated.bounds.set(dst);

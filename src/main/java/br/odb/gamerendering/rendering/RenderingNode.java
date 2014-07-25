@@ -55,10 +55,10 @@ public abstract class RenderingNode implements Updatable {
 
 	public void setBounds(Rect b) {
 
-		bounds.x0 = b.x0;
-		bounds.y0 = b.y0;
-		bounds.x1 = b.x1;
-		bounds.y1 = b.y1;
+		bounds.p0.x = b.p0.x;
+		bounds.p0.y = b.p0.y;
+		bounds.p1.x = b.p1.x;
+		bounds.p1.y = b.p1.y;
 	}
 
 	public boolean isInside(Vec2 point) {

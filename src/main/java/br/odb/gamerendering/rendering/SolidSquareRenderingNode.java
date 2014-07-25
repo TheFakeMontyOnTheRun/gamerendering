@@ -21,7 +21,7 @@ public class SolidSquareRenderingNode extends RenderingNode {
     public SolidSquareRenderingNode( Rect rect,
             Color color) {
 
-        super("square_" + rect.x0 + "_" + rect.y0 + "_" + rect.x1 + "_" + rect.y1 + "_" + color.getHTMLColor());
+        super("square_" + rect.p0.x + "_" + rect.p0.y + "_" + rect.p1.x + "_" + rect.p1.y + "_" + color.getHTMLColor());
         this.bounds = rect;
         this.color = color;
     }

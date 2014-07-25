@@ -35,7 +35,7 @@ public class VirtualPad {
 	}
 
 	public void setBounds(Rect bounds) {
-		setBounds(bounds.x0, bounds.y0, bounds.x1, bounds.y1);
+		setBounds(bounds.p0.x, bounds.p0.y, bounds.p1.x, bounds.p1.y);
 	}
 
 	public void setBounds(float x0, float y0, float x1, float y1) {

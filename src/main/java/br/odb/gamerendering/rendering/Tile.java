@@ -73,12 +73,12 @@ public class Tile extends RenderingNode implements Constants {
 		visible = true;
 
 		setKind(kind);
-		bounds.setP0(new Vec2(x * TILE_SIZE_X, y * TILE_SIZE_Y));
+		bounds.p0.set(x * TILE_SIZE_X, y * TILE_SIZE_Y);
 	}
 
 	public Tile(Rect rect, RasterImage rasterImage) {
             
-                super( "tile_" + rect.x0 + "_" + rect.y0 );
+                super( "tile_" + rect.p0.x + "_" + rect.p0.y );
 		visible = true;
 		kind = 0;
 		bounds.set(rect);
@@ -90,10 +90,10 @@ public class Tile extends RenderingNode implements Constants {
 		visible = true;
 		kind = 0;
 		Rect rect = new Rect();
-		rect.x0 = 0;
-		rect.y0 = 0;
-		rect.x1 = image.getWidth();
-		rect.y1 = image.getHeight();
+		rect.p0.x = 0;
+		rect.p0.y = 0;
+		rect.p1.x = image.getWidth();
+		rect.p1.y = image.getHeight();
 		bounds.set(rect);
 		setImage(image);
 	}
