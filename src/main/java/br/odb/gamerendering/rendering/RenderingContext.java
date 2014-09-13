@@ -42,6 +42,8 @@ public abstract class RenderingContext {
 
 	public abstract void drawBitmap(RasterImage tileImage, Rect bounds);
 
+	public abstract void drawLine(Vec2 p0, Vec2 p1);
+	
 	public abstract void drawBitmap(RasterImage currentImage, Vec2 translate, Vec2 scale, int angleRotation );
 	
 	public abstract void setClipRect(Rect bounds);
