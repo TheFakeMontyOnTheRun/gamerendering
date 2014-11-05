@@ -57,4 +57,6 @@ public abstract class RenderingContext {
 		currentAlpha = f;
 	}
 
+	public abstract void drawText(Vec2 p0, String content, Color color, int fontSize );
+
 }

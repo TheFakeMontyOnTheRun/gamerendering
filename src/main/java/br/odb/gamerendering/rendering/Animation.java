@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class Animation implements Runnable {
 	boolean running = false;
 	private int framesPerSecond;
-	private ArrayList<Frame> frames;
+	private ArrayList<RenderingNode> frames;
 	private int currentFrame;
 	private boolean loop;
 	private Thread controller;
 
 	public Animation() {
-		frames = new ArrayList<Frame>();
+		frames = new ArrayList<RenderingNode>();
 		currentFrame = 0;
 		loop = true;
 		framesPerSecond = 24;
@@ -44,14 +44,14 @@ public class Animation implements Runnable {
 	 * @param frames
 	 *            the frames to set
 	 */
-	public void setFrames(ArrayList<Frame> frames) {
+	public void setFrames(ArrayList<RenderingNode> frames) {
 		this.frames = frames;
 	}
 
 	/**
 	 * @return the frames
 	 */
-	public ArrayList<Frame> getFrames() {
+	public ArrayList<RenderingNode> getFrames() {
 		return frames;
 	}
 
@@ -85,12 +85,12 @@ public class Animation implements Runnable {
 		return loop;
 	}
 
-	public void addFrame(RasterImage bitmap) {
-		frames.add(new Frame(bitmap));
+	public void addFrame(RenderingNode node ) {
+		frames.add( node );
 
 	}
 
-	public Frame getCurrentFrameReference() {
+	public RenderingNode getCurrentFrameReference() {
 		return getFrameReference(currentFrame);
 	}
 
@@ -100,7 +100,7 @@ public class Animation implements Runnable {
 		controller.start();
 	}
 
-	public Frame getFrameReference(int i) {
+	public RenderingNode getFrameReference(int i) {
 		return frames.get(i);
 	}
 
