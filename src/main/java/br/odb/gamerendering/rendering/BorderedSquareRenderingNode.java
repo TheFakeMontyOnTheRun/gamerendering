@@ -22,7 +22,7 @@ public class BorderedSquareRenderingNode extends RenderingNode {
 
         super("BorderedSquareRenderingNode_" + id);
 
-        this.bounds = rect;
+        this.bounds.set( rect );
 
         Rect[] borderRects = new Rect[4];
 

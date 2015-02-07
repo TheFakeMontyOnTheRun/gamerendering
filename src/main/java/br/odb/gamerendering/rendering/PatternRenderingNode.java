@@ -10,7 +10,7 @@ public class PatternRenderingNode extends RenderingNode {
 		super( "PatternRenderingNode_" + node.getId() );
 
 		this.repeated = node;
-		this.bounds = rect;
+		this.bounds.set( rect );
 	}
 
 	@Override

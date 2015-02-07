@@ -10,7 +10,7 @@ import br.odb.utils.math.Vec2;
 public abstract class RenderingNode implements Updatable {
 
 	ArrayList<RenderingNode> subnodes;
-	public Rect bounds = new Rect();
+	final public Rect bounds = new Rect();
 	boolean visible = true;
 	final public Vec2 translate = new Vec2(0.0f, 0.0f);
 	final public Vec2 scale = new Vec2(1.0f, 1.0f);
@@ -51,14 +51,6 @@ public abstract class RenderingNode implements Updatable {
 				animation.kill();
 			}
 		}
-	}
-
-	public void setBounds(Rect b) {
-
-		bounds.p0.x = b.p0.x;
-		bounds.p0.y = b.p0.y;
-		bounds.p1.x = b.p1.x;
-		bounds.p1.y = b.p1.y;
 	}
 
 	public boolean isInside(Vec2 point) {

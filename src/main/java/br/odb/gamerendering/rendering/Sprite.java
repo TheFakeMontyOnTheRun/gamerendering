@@ -16,7 +16,7 @@ public class Sprite extends RenderingNode {
         images = new RasterImage[ 1 ];
         images[ 0 ] = image;
         this.currentImage = image;
-        setBounds( new Rect( 0.0f, 0.0f, image.getWidth(), image.getHeight() ) );
+        bounds.set( new Rect( 0.0f, 0.0f, image.getWidth(), image.getHeight() ) );
     }
 
     public void setFrame(int frame) {
