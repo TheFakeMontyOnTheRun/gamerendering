@@ -34,6 +34,10 @@ public class GameRenderer {
 	}
 
 	public void renderNode(RenderingNode node) {
+		
+		if ( !node.isVisible() ) {
+			return;
+		}
 
 		float previousAlpha = currentRenderingContext.getCurrentAlpha();
 
