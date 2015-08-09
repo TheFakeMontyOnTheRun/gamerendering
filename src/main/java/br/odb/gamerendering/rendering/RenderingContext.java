@@ -56,6 +56,8 @@ public abstract class RenderingContext {
 	public void setCurrentAlpha(float f) {
 		currentAlpha = f;
 	}
+	
+	public abstract void drawOval( Rect area, Color color ); 
 
 	public abstract void drawText(Vec2 p0, String content, Color color, int fontSize );
 
