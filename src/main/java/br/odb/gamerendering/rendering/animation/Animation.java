@@ -1,7 +1,7 @@
 package br.odb.gamerendering.rendering.animation;
 
 import br.odb.gamerendering.rendering.RenderingNode;
-import br.odb.utils.Updatable;
+import br.odb.gameutils.Updatable;
 
 public abstract class Animation implements Updatable {
 

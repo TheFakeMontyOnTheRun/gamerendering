@@ -1,6 +1,6 @@
 package br.odb.gamerendering.rendering;
 
-import br.odb.utils.Color;
+import br.odb.gameutils.Color;
 
 public class TextNode extends RenderingNode {
 

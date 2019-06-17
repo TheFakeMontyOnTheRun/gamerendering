@@ -4,7 +4,7 @@
 package br.odb.gamerendering.rendering.animation;
 
 import br.odb.gamerendering.rendering.RenderingNode;
-import br.odb.utils.math.Vec2;
+import br.odb.gameutils.math.Vec2;
 
 
 

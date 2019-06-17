@@ -3,9 +3,9 @@ package br.odb.gamerendering.rendering;
 import java.util.ArrayList;
 
 import br.odb.gamerendering.rendering.animation.Animation;
-import br.odb.utils.Rect;
-import br.odb.utils.Updatable;
-import br.odb.utils.math.Vec2;
+import br.odb.gameutils.Rect;
+import br.odb.gameutils.Updatable;
+import br.odb.gameutils.math.Vec2;
 
 public abstract class RenderingNode implements Updatable {
 

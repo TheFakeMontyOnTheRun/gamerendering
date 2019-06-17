@@ -5,7 +5,7 @@ import java.io.InputStream;
 import br.odb.libsvg.ColoredPolygon;
 import br.odb.libsvg.SVGGraphic;
 import br.odb.libsvg.SVGParsingUtils;
-import br.odb.utils.math.Vec2;
+import br.odb.gameutils.math.Vec2;
 
 public class SVGRenderingNode extends RenderingNode {
 

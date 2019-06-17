@@ -1,6 +1,6 @@
 package br.odb.gamerendering.rendering;
 
-import br.odb.utils.Rect;
+import br.odb.gameutils.Rect;
 
 public class PatternRenderingNode extends RenderingNode {
 

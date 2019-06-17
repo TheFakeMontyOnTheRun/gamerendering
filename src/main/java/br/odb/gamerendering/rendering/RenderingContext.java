@@ -7,9 +7,9 @@ import java.util.HashMap;
 
 import br.odb.libsvg.ColoredPolygon;
 import br.odb.libsvg.SVGParsingUtils.Gradient;
-import br.odb.utils.Color;
-import br.odb.utils.Rect;
-import br.odb.utils.math.Vec2;
+import br.odb.gameutils.Color;
+import br.odb.gameutils.Rect;
+import br.odb.gameutils.math.Vec2;
 
 /**
  * @author monty

@@ -3,8 +3,8 @@
  */
 package br.odb.gamerendering.rendering;
 
-import br.odb.utils.Rect;
-import br.odb.utils.math.Vec2;
+import br.odb.gameutils.Rect;
+import br.odb.gameutils.math.Vec2;
 
 /**
  * @author monty

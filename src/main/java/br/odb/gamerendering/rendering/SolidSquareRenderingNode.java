@@ -3,8 +3,8 @@
  */
 package br.odb.gamerendering.rendering;
 
-import br.odb.utils.Color;
-import br.odb.utils.Rect;
+import br.odb.gameutils.Color;
+import br.odb.gameutils.Rect;
 
 /**
  * @author monty
